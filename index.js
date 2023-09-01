@@ -149,7 +149,7 @@ ${description}`
 if(wantMenu){
     body += `
 
-    ## TABLE OF CONTENTS`}
+## TABLE OF CONTENTS`}
 if(wantMenu && wantInstructions){
     body += `
 * [Usage](#instructions)`}
@@ -215,7 +215,7 @@ body +=`
 ${license}
 
 # CONTACT
-* Github: ${github}
+* Github: [${github}](https://github.com/${github})
 * E-mail: ${email}`
     
 if(wantLinkedin){
