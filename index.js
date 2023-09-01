@@ -151,7 +151,7 @@ if(wantMenu){
     ## TABLE OF CONTENTS`}
 if(wantMenu && wantInstructions){
     body += `
-* [Instructions](#instructions)`}
+* [Usage](#instructions)`}
 if(wantMenu && wantInstallation){
     body += `
 * [Installation](#installation)`}
@@ -161,7 +161,7 @@ if(wantMenu && wantCredits){
 }
 if(wantMenu && wantContribution){
     body += `
-* [Contribution](#contribution)`}
+* [Contributing](#contribution)`}
 
 if(wantMenu){
 body +=`
@@ -176,7 +176,7 @@ if (wantInstructions){
     body += `
 
 
-## INSTRUCTIONS
+## USAGE
 ${instructions}
 `}
 
@@ -198,7 +198,7 @@ ${credits}
 
 if(wantContribution){
 body += `
-## CONTRIBUTIONS
+## CONTRIBUTING
 You are welcome to help if you have any ideas to improve our project! If you want to do so, just follow these steps:
 
 1 - Fork the repository.  
