@@ -1,0 +1,19 @@
+{
+  "name": "myeasyreadme",
+  "version": "1.0.0",
+  "description": "This is a application that dynamically generates a professional README.md. All you have to do is answer just a few questions on your command-line . Save time to work on your code and leave your Readme file for us!",
+  "main": "myEasyReadme.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "automatic",
+    "readme",
+    "professional"
+  ],
+  "author": "Leo Gurgel",
+  "license": "MIT",
+  "dependencies": {
+    "inquirer": "^8.2.6"
+  }
+}
