@@ -10,13 +10,13 @@ This is an application that dynamically creates a proffessional README.md file f
 
 
 ## INSTRUCTIONS
-1 - To run this application, you need to have node.js installed on your machine. You can download it from the official Node website (https://nodejs.org)
+1 - To run this application, you need to have node.js installed on your machine. You can download it from the official Node website (https://nodejs.org)  
 
-2 - After installing node, go to the directory containing this application an open it on your command line.
+2 - After installing node, go to the directory containing this application an open it on your command line.  
 
-3 - Once you're in the right directory at your command line, install inquirer.js by running this line of code: npm i inquirer
+3 - Once you're in the right directory at your command line, install inquirer.js by running this line of code: npm i inquirer  
 
-4 - Finally, after having Node and Inquire installed, on your command line, run: node index.js
+4 - Finally, after having Node and Inquire installed, on your command line, run: node index.js  
 
 5 - The questions will print automatically. Answer all of them and at the end, a Readme file will be generated with the same name of your project.
 
