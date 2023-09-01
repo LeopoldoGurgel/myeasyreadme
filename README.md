@@ -1,4 +1,6 @@
 # Easy README Generator
+
+[![Watch the demonstrational video]](https://drive.google.com/file/d/16RE_ZGRy_rmiI17z7AkLSu86-ipbs_Mp/view)
     
 ## DESCRIPTION
 This is an application that dynamically creates a proffessional README.md file for your project. All you have to do is answer a few questions this app will propt on your command line. Done. You magic have a README file.
@@ -14,11 +16,11 @@ This is an application that dynamically creates a proffessional README.md file f
 
 2 - After installing node, go to the directory containing this application an open it on your command line.  
 
-3 - Once you're in the right directory at your command line, install inquirer.js by running this line of code: npm i inquirer  
+3 - Once you're in the right directory at your command line, install the node packages needed by running this line of code: npm i  
 
-4 - Finally, after having Node and Inquire installed, on your command line, run: node index.js  
+4 - Now, on your command line, run: node index.js  
 
-5 - The questions will print automatically. Answer all of them and at the end, a Readme file will be generated with the same name of your project.
+5 - The questions will print automatically. Answer all of them and a Readme file will be generated with the same name of your project in the markdowns folder.
 
 
     
