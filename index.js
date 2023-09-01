@@ -32,6 +32,12 @@ inquirer
     },
     {
         type: 'confirm',
+        name: 'wantMenu',
+        message: 'Do you want a table of contents on your readme?',
+        default: true
+    },
+    {
+        type: 'confirm',
         name:  'wantInstructions',
         message: 'Do you want to add instructions on how to use you application to your ReadMe file?',
         default: true
@@ -69,7 +75,7 @@ inquirer
     {
         type: 'confirm',
         message: 'Want to welcome other developers to fork your repo and contributing to your project?',
-        name: 'wantContibution',
+        name: 'wantContribution',
         default: true
     },
     {
@@ -131,19 +137,40 @@ inquirer
     buildReadme(answers);
 });
 
-const buildReadme = ({title, description, wantInstructions, instructions, wantInstallation, installation, wantCredits, credits, license, github, email, wantContribution, wantLinkedin, linkedin}) => {
+const buildReadme = ({title, description, wantMenu, wantInstructions, instructions, wantInstallation, installation, wantCredits, credits, license, github, email, wantContribution, wantLinkedin, linkedin}) => {
     var body = 
 
 `# ${title}
 
 ## DESCRIPTION
-${description}
+${description}`
 
-* [Instructions](#instructions)
-* [Installation](#installation)
-* [Credits](#credits)
-* [Contribution](#contribution)
-* [License](#license)`;
+
+if(wantMenu){
+    body += `
+    ## TABLE OF CONTENTS`}
+if(wantMenu && wantInstructions){
+    body += `
+* [Instructions](#instructions)`}
+if(wantMenu && wantInstallation){
+    body += `
+* [Installation](#installation)`}
+if(wantMenu && wantCredits){
+    body += `
+* [Credits](#credits) `
+}
+if(wantMenu && wantContribution){
+    body += `
+* [Contribution](#contribution)`}
+
+if(wantMenu){
+body +=`
+* [License](#license)
+* [Contact](#contact)`}
+
+
+
+
     
 if (wantInstructions){    
     body += `
@@ -181,8 +208,9 @@ You are welcome to help if you have any ideas to improve our project! If you wan
 5 - Open a pull request detailing the changes you've made.`
 }
 
-body +=
-`## LICENSE
+body +=`
+
+## LICENSE
 ${license}
 
 # CONTACT
