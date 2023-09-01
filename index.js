@@ -67,6 +67,12 @@ inquirer
         when: (answers) => answers.wantCredits
     },
     {
+        type: 'confirm',
+        message: 'Want to welcome other developers to fork your repo and contributing to your project?',
+        name: 'wantContibution',
+        default: true
+    },
+    {
         type: 'list',
         message: 'What license type did you use?',
         name: 'license',
@@ -125,7 +131,7 @@ inquirer
     buildReadme(answers);
 });
 
-const buildReadme = ({title, description, wantInstructions, instructions, wantInstallation, installation, wantCredits, credits, license, github, email, contribution, wantLinkedin, linkedin}) => {
+const buildReadme = ({title, description, wantInstructions, instructions, wantInstallation, installation, wantCredits, credits, license, github, email, wantContribution, wantLinkedin, linkedin}) => {
     var body = 
 
 `# ${title}
@@ -163,6 +169,7 @@ if(wantCredits){
 ${credits}
 `}
 
+if(wantContribution){
 body += `
 ## CONTRIBUTIONS
 You are welcome to help if you have any ideas to improve our project! If you want to do so, just follow these steps:
@@ -171,9 +178,11 @@ You are welcome to help if you have any ideas to improve our project! If you wan
 2 - Create a new branch for you new feature or bug fix.
 3 - Make the changes you have in mind.
 4 - Commit your changes and push them to your fork.
-5 - Open a pull request detailing the changes you've made.
+5 - Open a pull request detailing the changes you've made.`
+}
 
-## LICENSE
+body +=
+`## LICENSE
 ${license}
 
 # CONTACT
