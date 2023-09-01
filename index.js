@@ -148,6 +148,7 @@ ${description}`
 
 if(wantMenu){
     body += `
+
     ## TABLE OF CONTENTS`}
 if(wantMenu && wantInstructions){
     body += `
