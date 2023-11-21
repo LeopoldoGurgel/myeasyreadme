@@ -3,7 +3,7 @@
 [![Watch the demonstrational video]](https://drive.google.com/file/d/16RE_ZGRy_rmiI17z7AkLSu86-ipbs_Mp/view)
     
 ## DESCRIPTION
-This is an application that dynamically creates a proffessional README.md file for your project. All you have to do is answer a few questions this app will propt on your command line. Done. You magic have a README file.
+This is an application that dynamically creates a proffessional README.md file for your project powered by Inquirer.js npm library. All you have to do is answer a few questions this app will propt on your command line. Done. You magically have a README file.
 
 * [Instructions](#instructions)
 * [Credits](#credits)
